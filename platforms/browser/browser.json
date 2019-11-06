@@ -1,0 +1,61 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"BarcodeScanner\"><param name=\"browser-package\" value=\"BarcodeScanner\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>To scan barcodes</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.univlr.info.m2"
+    },
+    "cordova-plugin-qr-barcode-scanner": {
+      "PACKAGE_NAME": "com.univlr.info.m2"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "clobbers": [
+        "cordova.plugins.barcodeScanner"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/src/browser/BarcodeScannerProxy.js",
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScannerProxy",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.2",
+    "cordova-plugin-qr-barcode-scanner": "8.0.3"
+  }
+}

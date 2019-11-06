@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>QRLab</title>
+
+    <link rel="stylesheet" href="js/vendor/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home-page" data-theme="a">
+        <div data-role="header">
+        </div>
+        <div role="main"  class="ui-content">
+            <img src="img/logo.png" class="center" alt="" />
+            <p class="center">Un jeu sérieux ubiquitaire et adaptatif !</p>
+            <a id="play-button" href="#game-page" class="ui-btn ui-corner-all menu-buttons">Jouer</a>
+            <a id="reset-button" href="#" class="ui-btn ui-corner-all menu-buttons">Reinitialiser les données</a>
+        </div>
+    </div>
+
+    <!-- GAME PAGE -->
+    <div data-role="page" id="game-page" data-theme="a">
+        <div data-role="header">
+            <a href="#home-page" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-btn-left ui-btn-icon-left ui-btn-icon-notext ui-icon-arrow-l">Retour</a>
+            <h2>Questions</h2>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p id="question-p" class="center"></p>
+            <a id="scan-info" href="#" class="ui-btn ui-corner-all menu-buttons">Scanner informations</a>
+            <a id="scan-answer" href="#" class="ui-btn ui-corner-all menu-buttons">Scanner réponse</a>
+            <a id="hint-button" href="#hint-page" class="ui-btn ui-corner-all menu-buttons hidden">Indice</a>
+            <a id="skip-button" href="#game-page" class="ui-btn ui-corner-all menu-buttons hidden">Passer la question</a>
+        </div>
+    </div>
+
+    <!-- INFO PAGE -->
+    <div data-role="page" id="info-page" data-theme="a">
+        <div data-role="header">
+            <a href="#game-page" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-btn-left ui-btn-icon-left ui-btn-icon-notext ui-icon-arrow-l">Retour</a>
+            <h2>Information</h2>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p id="info-p" class="center">Stub information for pagination purposes</p>
+       </div>
+    </div>
+
+    <!-- ANSWER PAGE -->
+    <div data-role="page" id="answer-page" data-theme="a">
+        <div data-role="header">
+            <h2 id="answer-header"></h2>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p id="answer-p" class="center"></p>
+            <a id="next-button" href="#" class="ui-btn ui-corner-all menu-buttons hidden">Question suivante</a>
+            <a id="retry-button" href="#game-page" class="ui-btn ui-corner-all menu-buttons hidden">Réessayer</a>
+        </div>
+    </div>
+
+    <!-- HINT PAGE -->
+    <div data-role="page" id="hint-page" data-theme="a">
+        <div data-role="header">
+            <a href="#game-page" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-btn-left ui-btn-icon-left ui-btn-icon-notext ui-icon-arrow-l">Retour</a>
+            <h2>Indice</h2>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p id="hint-p" class="center">Stub information for pagination purposes</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+[
+  {
+    "question": "Qui a participé à l'écriture de l'article :\n \" Analyse d’Images de Documents Anciens : une Approche Texture, revue Traitement du signal, Volume 24, N° 6, 2007\" ?",
+    "answers": ["Remy Mullot"],
+    "difficulty": "hard",
+    "hint": "Ceci est un indice générique"
+  },
+
+  {
+    "question": "Qui développe la librairie de manipulation des treillis ?",
+    "answers": ["Karell Bertet"],
+    "difficulty": "easy",
+    "hint": "Ceci est un indice générique"
+  },
+
+  {
+    "question": "Qui sont les directeurs de thèse de Damien Mondou ?",
+    "answers": ["Armelle Prigent", "Arnaud Revel"],
+    "difficulty": "medium",
+    "hint": "Ceci est un indice générique"
+  },
+
+  {
+    "question": "Qui est impliqué dans les projets Art et sciences ?",
+    "answers": ["Arnaud Revel"],
+    "difficulty": "easy",
+    "hint": "Ceci est un indice générique"
+  },
+
+  {
+    "question": "Qui a participé à l'écriture de l'article :\n « Une approche ontologique pour la structuration de données spatio-temporelles de trajectoires : Application à l’étude des déplacements de mammifères marins », Revue Internationale de Géomatique - International Journal of Geomatics and Spatial Analysis , Hermes-Lavoisier, vol 22/1-2012, pp 55-75 ( francophone ) (selected paper SAGEO) ?",
+    "answers": ["Alain Bouju"],
+    "difficulty": "hard",
+    "hint": "Ceci est un indice générique"
+  }
+]

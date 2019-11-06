@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src * 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' blob:; img-src *; media-src *; font-src data:" />
+    <title>QRLab</title>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="lib/onsenui/js/onsenui.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <ons-navigator swipeable id="myNavigator" page="home.html"></ons-navigator>
+
+    <template id="home.html">
+        <ons-page id="home">
+            <ons-toolbar>
+                <div class="center">Accueil</div>
+            </ons-toolbar>
+            <img src="img/logo.png" class="logo" />
+            <p class="intro">Un jeu sérieux ubiquitaire et adaptatif !</p>
+            <section><ons-button modifier="large" id="playButton">Jouer</ons-button></section>
+        </ons-page>
+    </template>
+
+    <template id="game.html">
+        <ons-page id="game">
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Accueil</ons-back-button></div>
+                <div class="center">Jeu</div>
+            </ons-toolbar>
+            <p class="intro" id="question">
+
+            </p>
+            <section><ons-button modifier="large" id="scanText">Scanner un texte</ons-button></section>
+            <section><ons-button modifier="large" id="scanAnswer">Scanner la réponse</ons-button></section>
+        </ons-page>
+    </template>
+
+    <template id="info.html">
+        <ons-page id="info">
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Question</ons-back-button></div>
+                <div class="center">Informations</div>
+            </ons-toolbar>
+            <p class="intro" id="details"></p>
+        </ons-page>
+    </template>
+
+</body>
+</html>

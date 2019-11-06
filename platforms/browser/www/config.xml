@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.univlr.info.m2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>QRLab</name>
+    <description>
+    	Un jeu ubiquitaire adaptatif de type "serious game".
+    </description>
+    <author email="brice.jeanne@etudiant.univ-lr.fr" href="">
+        Brice JEANNE &amp; Adrien Rouhaud
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>To scan barcodes</string>
+    </edit-config>
+    <preference name="phonegap-version" value="cli-7.1.0" />
+</widget>
